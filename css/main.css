@@ -115,3 +115,35 @@ animation-duration: 1s;
   to{opacity: 1;}
 
 }
+
+
+@media (max-width: 700px){
+
+
+ .contenedor{
+   flex-direction: column-reverse;
+   
+ }
+
+ .login{
+  
+    width: 100%;
+    margin-top: 50px;
+
+ }
+
+ .img-portada{
+   
+  width: 100%;
+
+ }
+ .img__portada-user{
+   
+  width: 100%;
+
+ }
+
+
+
+
+}
