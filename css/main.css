@@ -92,3 +92,18 @@ body{
     color: white;
   
 }
+
+.usuario{
+
+  animation-name: usuario;
+  animation-duration: 1s;
+ 
+
+}
+
+@keyframes usuario {
+
+  from{opacity: 0;}
+  to{opacity: 1;}
+
+}
