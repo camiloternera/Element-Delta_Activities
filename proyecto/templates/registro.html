@@ -1,0 +1,15 @@
+
+{% extends 'login_ajax.html' %}
+{% block titulo %}Element Delta - Registro{% endblock titulo %}
+
+{% block cuerpo %}
+
+<header class="header">
+   <a href ="../"> <img class="header__logo" src="/static/img/logo.png"></a>
+</header>
+
+<form method = "post">
+{{users_form.as_p}}
+</form>
+
+{% endblock cuerpo %}

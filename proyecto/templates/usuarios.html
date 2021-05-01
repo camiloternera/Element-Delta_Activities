@@ -1,0 +1,20 @@
+{% extends 'login_ajax.html' %}
+{% block titulo %}Element Delta - Usuarios{% endblock titulo %}
+
+{% block cuerpo %}
+
+{% for  users in usuario %}
+<p><b>Nombre: </b>{{users.Nombre}} </p>
+<p><b>Apellido:</b> {{users.Apellido}} </p>
+<p><b>Edad :</b> {{users.Edad}}</p>
+<p><b>Correo:</b> {{users.Ciudad}} </p>
+<br> 
+{% endfor %}
+
+
+</ul>
+
+
+
+
+{% endblock cuerpo %}

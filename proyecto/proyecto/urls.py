@@ -21,7 +21,9 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api_rest/', include('aplicacion.urls')),
     path('login_ajax/', views.login_ajax, name= 'index'),
-    path('index/', views.index, name = "index"),
+    path('', views.index, name = "index"),
+    path('usuarios/', views.usuarios, name = "usuarios"),
+    path('registro/', views.registro, name = "registro"),
 
   
 ]
