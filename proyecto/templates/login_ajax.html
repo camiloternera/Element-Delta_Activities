@@ -5,17 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link rel="shortcut icon" href="img/logo_blanco.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/main.css">
+    {% block icono  %}<link rel="shortcut icon" href="img/logo_blanco.png" type="image/x-icon">{% endblock icono  %}
+    <link rel="stylesheet" href="/static/css/login_ajax.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <title>Element Delta - Login</title>
+    <title> {% block titulo %}Element Delta - Login{% endblock titulo %} </title>
     
 </head>
 <body>
+{% block cuerpo %}
 
 <header class="header">
-    <img class="header__logo" src="/img/logo.png">
+    <img class="header__logo" src="/static/img/logo.png">
 </header>
 
 <div class="contenedor"> 
@@ -30,7 +31,7 @@
       login__password : Lo mismo que la anterior, lo que se llama al password 
     -->
     <form class="login">
-        <img    class = "login__view"src="img/logo2.png" width="54" height="50">
+        <img    class = "login__view"src="/static/img/logo2.png" width="54" height="50">
         <h2     class="login__view">Login</h2>
         <input  type="text" placeholder = "Username" class="login__input login__view login__username">
         <input  type="password" placeholder = "password" class="login__input login__view login__password">
@@ -44,6 +45,8 @@
        
 
 
-    <script src="js/main.js"></script>
+    <script src="/static/js/login_ajax.js"></script>
+
+    {% endblock cuerpo %}
 </body>
 </html>
